@@ -2,9 +2,8 @@ libharu nuget wrapper
 
 install:
 - windows sdk
-- compiler update sp1
+- compiler update sp1 (probably not neccessary)
 - cmake
-
 
 download https://codeload.github.com/libharu/libharu/zip/RELEASE_2_3_0 (or https://github.com/libharu/libharu/archive/RELEASE_2_3_0.zip) into C:\Users\temp\Desktop\libharu\libharu
 mkdir C:\Users\temp\Desktop\libharu\libharu-build
@@ -24,3 +23,6 @@ nmake
 cd C:\Users\temp\Desktop\libharu\libharu-build
 cmake -G "NMake Makefiles" ..\libharu -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DCMAKE_COLOR_MAKEFILE=ON -DLIBHPDF_EXAMPLES=ON -DZLIB_INCLUDE_DIR=C:\Users\temp\Desktop\libharu\zlib128-dll\include -DZLIB_LIBRARY=C:\Users\temp\Desktop\libharu\zlib128-dll\lib\zdll.lib -DPNG_LIBRARY=C:\Users\temp\Desktop\libharu\lpng1621-build\libpng16.lib -DPNG_PNG_INCLUDE_DIR=C:\Users\temp\Desktop\libharu\lpng1621
 nmake
+
+use windows sdk 7.1 command prompt
+execute setenv /Release /x86 /vista
