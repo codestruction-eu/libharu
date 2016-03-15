@@ -1,6 +1,6 @@
 libharu nuget wrapper
 
-install:
+install build environment:
 - windows sdk
 - compiler update sp1 (probably not neccessary)
 - cmake
