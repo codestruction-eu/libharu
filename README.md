@@ -1,5 +1,8 @@
 libharu nuget wrapper
 
+install nuget:
+- set copy to output directory!
+
 install build environment:
 - windows sdk
 - compiler update sp1 (probably not neccessary)
